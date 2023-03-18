@@ -5,7 +5,7 @@
 :local ttl "00:29:59"
 
 # Remove all dynamic records
-/ip dns static remove [/ip dns static find ttl=$ttl]
+/ip dns static remove [ttl=$ttl]
 
 # Add DNS entries for active DHCP leases
 /ip dhcp-server lease

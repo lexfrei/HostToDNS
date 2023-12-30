@@ -22,7 +22,9 @@ This script is designed to run on a MikroTik RouterOS device and automatically a
 
 1. Add the script to your scripts in System -> Scripts
 
-2. ``/system scheduler
-add interval=30m name=HostToDNS on-event="/system script run HostToDNS"``
+2. ```
+/system scheduler
+add interval=30m name=HostToDNS on-event="/system script run htd"
+```
 
 The script will automatically add DNS entries for all active DHCP leases on the network.
